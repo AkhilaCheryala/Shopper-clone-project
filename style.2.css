@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
+body{
+   font-family: 'Jost';
+}
+.nav-bar-1{
+    display: flex;
+    background-color: rgb(245,245,245); 
+    height: 7vh;
+    margin-top: -5px; 
+    width: 100%;
+    align-items: center; 
+    justify-content: space-around;
+   font-size: 12px;
+   font-weight: bold;
+   letter-spacing: 0.5px ;
+}
+.nav-bar-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 100%;
+ }
+ .nav_text{
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight:bold;
+ }
+ .icons_set-2{
+    display: flex;  
+ }
+ .icons_set-2 span{
+   margin-right: 10px;
+ }
+ .cart{
+    position: relative;
+ }
+ .sup{
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(240, 83, 83);
+    padding: 1px 4px;
+    border-radius: 50%;
+    top: -1rem;
+    right: 0; 
+ }
+ .article{
+    font-size: 13px;
+    font-weight:bold ;
+    word-spacing: 2px;
+    background-color: #272626;
+    color: rgb(228, 227, 227);
+    text-align: center;
+    padding: 15px 0px;
+    width: 100%;
+    margin-top: 30px;
+ }
+ .bi-lightning-charge-fill{
+    color: rgb(201, 146, 5);
+ }
+ .menu{
+    font-size: 2rem;
+}
+.picture_slider{
+    position: relative;
+    flex-direction: row;
+    width: 800px;
+    height: 100%;
+    overflow-x: hidden;
+    margin-left: 25rem;
+    margin-top: 2rem;
+}
+.slides{
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 0.2s ease;
+}
+.slide img{
+    width: 800px;
+    height: 500px;;
+    object-fit: cover;
+}
+.navigation{
+    position: absolute;
+    width: 600px;
+    bottom: 40px;
+    left: 22rem;
+    display: flex;
+    
+}
+.manual-btn {
+    border: 1.5px solid rgb(30, 30, 30);
+    background-color: beige;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: rgb(61, 59, 59);
+}
+
+#radio-1:checked~.first {
+    margin-left: 0%;
+}
+
+#radio-2:checked~.first {
+    margin-left: -100%; /* Adjust based on number of slides */
+}
+
+#radio-3:checked~.first {
+    margin-left: -200%; /* Adjust based on number of slides */
+}
+.picture_text{
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    font-size: larger;
+}
+.text_on{
+    font-size: 38px;
+}
+.highlighter{
+    font-size: 10rem;
+    margin: 0;
+    color: rgb(69, 66, 66);
+}
+.text_on_2{
+    color: rgb(229, 222, 214);
+    font-size: 35px;
+}
+.sub{
+    color:rgb(229, 222, 214) ;
+}
+.code{
+    color: rgb(235, 114, 70);
+}
+.btn-1_2{
+    padding: .8rem 1.8rem;
+}
+.picture_text_3{
+    position: absolute;
+    top: 7rem;
+    left: 9rem;
+    text-align: center;
+}
+.sub_1{
+  font-size: 30px;
+  color: rgb(42, 40, 40);  
+}
+.sub_2{
+    font-size: 50px;
+    margin: 0;
+}
+.sub_3{
+    font-size: 25px;
+    text-decoration: underline;
+}

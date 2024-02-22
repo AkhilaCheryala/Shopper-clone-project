@@ -4,27 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="style.2.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
-<style>
-    .menu{
-        font-size: 2rem;
-    }
-    .picture_slider{
-        display: flex;
-        flex-direction: row;
-        width: 700px;
-        height: 500px;
-        overflow-x: hidden;
-        align-items: end;
-    }
-    .picture_slider img{
-         width: 660px; 
-        height: 400px;
-        object-fit: contain;
-    }
-</style>
 <body>
     <nav class="nav-bar-1">
         <div class="first-set">
@@ -60,11 +42,39 @@
  <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
  <span class="bi bi-lightning-charge-fill"></span>
 </article>
-<div class="picture_slider">
-    <div><img src="public/assets/ruan-richard-rodrigues-s9idT2PQUt4-unsplash.jpg" alt=""></div>
-    <div><img src="public/assets/alireza-najaf-bNMY0KbkRF0-unsplash.jpg" alt=""></div>
-    <div><img src="public/assets/allyson-johnson-lY3d_sIzBXg-unsplash.jpg" alt=""></div>
-</div>
+<section class="picture_slider">
+    <div class="slides">
+    <input type="radio" name="radio-btn" id="radio-1">
+    <input type="radio" name="radio-btn" id="radio-2">
+    <input type="radio" name="radio-btn" id="radio-3">
+    <div class="slide first"><img src="public/assets/pure-julia-7QV71Nb3LVg-unsplash.jpg" alt="">
+        <div class="picture_text">
+        <p class="text_on">2023 Summer Collection</p>
+        <p>view collection <span class="bi bi-arrow-right"></span></p>
+        <p class="highlighter">NEW</p>
+      </div>
+    </div>
+    <div class="slide"><img src="public/assets/alireza-najaf-bNMY0KbkRF0-unsplash.jpg" alt="">
+        <div class="picture_text">
+            <p class="text_on_2">Get 70% from Summer <br> Collection</p> 
+            <p class="sub">Appear, dry there darkness seas</p>
+            <p class="code">use code  UG5635HG</p>
+            <button class="btn-1_2">shop now <span class="bi bi-arrow-right"></span> </button>
+            
+          </div></div>
+    <div class="slide"><img src="public/assets/allyson-johnson-lY3d_sIzBXg-unsplash.jpg" alt="">
+    <div class="picture_text_3">
+        <p class="sub_1">ENJOY AN EXTRA</p>
+        <p class="sub_2"><b>50% OFF</b></p>
+        <p class="sub_3"> Shop Collection</p>
+    </div>
+    </div>
+    <div class="navigation">
+        <label for="radio-1" class="manual-btn"></label>
+        <label for="radio-2" class="manual-btn"></label>
+        <label for="radio-3" class="manual-btn"></label>
+    </div>
+</section>
 <h1>  PROJECT STILL IN PROGRESS</h1>
 </body>
 </html>
