@@ -62,6 +62,37 @@ body{
  .menu{
     font-size: 2rem;
 }
+.custom-width {
+    max-width: 250px; /* Or any other value */
+    
+}
+.container-fluid ul{
+    list-style: none;
+    padding: 0;
+}
+nav.container-fluid ul li a {
+    padding: 1.2rem 0 ;
+     display: block; 
+     text-decoration: none;
+     color: #000000;
+     border-bottom: 1px solid rgb(199, 195, 195);
+     font-size: 18px;
+     font-weight: 600;
+}
+.container-fluid li{
+    color: #272626;
+    font-size: 18px;
+   padding: 5px ;
+}
+.bi-caret-down-fill{
+    color: #353434;
+    
+}
+.size_list li{
+   margin: 15px !important;
+ 
+} 
+
 .picture_slider{
     position: relative;
     flex-direction: row;
@@ -73,6 +104,7 @@ body{
 }
 .slides{
     display: flex;
+   
 }
 .slides input{
     display: none;

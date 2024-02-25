@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.2.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <nav class="nav-bar-1">
@@ -16,65 +17,137 @@
         <div class="menu">
             <span class="bi bi-list"></span>
         </div>
-</nav>
+</nav> 
 <nav class="nav-bar-2">
-  <span class="title">Shopper.</span>
-<div>
-  <span class="nav_text"> Home</span>
-  <span class="nav_text">Catalog</span>
-  <span class="nav_text">Shop</span>
-  <span class="nav_text">Pages</span>
-  <span class="nav_text">Blog</span>
-  <span class="nav_text">Docs</span>
-</div>  
-<div class="icons_set-2">     
-  <span class="bi bi-search"></span>
-  <span class="bi bi-person"></span>
-  <span class="bi bi-heart"></span>
-  <div class="cart">
-     <span class="bi bi-cart"></span>
-     <p class="sup">2</p>
-  </div>
-</div> 
-</nav>
-<article class="article">
- <span class="bi bi-lightning-charge-fill"></span>
- <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
- <span class="bi bi-lightning-charge-fill"></span>
-</article>
-<section class="picture_slider">
-    <div class="slides">
-    <input type="radio" name="radio-btn" id="radio-1">
-    <input type="radio" name="radio-btn" id="radio-2">
-    <input type="radio" name="radio-btn" id="radio-3">
-    <div class="slide first"><img src="public/assets/pure-julia-7QV71Nb3LVg-unsplash.jpg" alt="">
-        <div class="picture_text">
-        <p class="text_on">2023 Summer Collection</p>
-        <p>view collection <span class="bi bi-arrow-right"></span></p>
-        <p class="highlighter">NEW</p>
-      </div>
+    <span class="title">Shopper.</span>
+  <div>
+    <span class="nav_text"> Home</span>
+    <span class="nav_text">Catalog</span>
+    <span class="nav_text">Shop</span>
+    <span class="nav_text">Pages</span>
+    <span class="nav_text">Blog</span>
+    <span class="nav_text">Docs</span>
+  </div>  
+  <div class="icons_set-2">     
+    <span class="bi bi-search"></span>
+    <span class="bi bi-person"></span>
+    <span class="bi bi-heart"></span>
+    <div class="cart">
+       <span class="bi bi-cart"></span>
+       <p class="sup">2</p>
     </div>
-    <div class="slide"><img src="public/assets/alireza-najaf-bNMY0KbkRF0-unsplash.jpg" alt="">
-        <div class="picture_text">
-            <p class="text_on_2">Get 70% from Summer <br> Collection</p> 
-            <p class="sub">Appear, dry there darkness seas</p>
-            <p class="code">use code  UG5635HG</p>
-            <button class="btn-1_2">shop now <span class="bi bi-arrow-right"></span> </button>
-            
-          </div></div>
-    <div class="slide"><img src="public/assets/allyson-johnson-lY3d_sIzBXg-unsplash.jpg" alt="">
-    <div class="picture_text_3">
-        <p class="sub_1">ENJOY AN EXTRA</p>
-        <p class="sub_2"><b>50% OFF</b></p>
-        <p class="sub_3"> Shop Collection</p>
-    </div>
-    </div>
-    <div class="navigation">
-        <label for="radio-1" class="manual-btn"></label>
-        <label for="radio-2" class="manual-btn"></label>
-        <label for="radio-3" class="manual-btn"></label>
-    </div>
-</section>
-<h1>  PROJECT STILL IN PROGRESS</h1>
+  </div> 
+  </nav>
+  <article class="article">
+    <span class="bi bi-lightning-charge-fill"></span>
+    <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+    <span class="bi bi-lightning-charge-fill"></span>
+   </article>
+    <nav class="container-fluid  position-absolute mt-5 custom-width ms-5"  >
+        <ul>
+            <li><a href="#" data-bs-toggle="collapse" data-bs-target="#categoryCollapse" class="d-flex align-items-center justify-content-between">Category  <span class="bi bi-caret-down-fill"></span></a>
+                <ul id="categoryCollapse" class="collapse">
+                    <li>All products</li>
+                    <li>Blouses</li>
+                    <li>Jeans</li>
+                    <li>Hoodies</li>
+                    <li>Dresses
+                        <ul>
+                            <li><input type="checkbox" value="A-line Dresses"> A-line Dresses</li>
+                            <li><input type="checkbox" value="Maxi Dresses"> Maxi Dresses</li>
+                            <li><input type="checkbox" value="Wrap Dresses"> Wrap Dresses</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-bs-toggle="collapse" data-bs-target="#colorCollapse"class="d-flex align-items-center justify-content-between">Color<span class="bi bi-caret-down-fill"></span></a>
+                <ul id="colorCollapse" class="collapse">
+                     <li><span class="bi bi-circle-fill" style="color: red;"></span> Red</li>
+                    <li><span class="bi bi-circle-fill" style="color: blue;"></span> Blue</li>
+                    <li><span class="bi bi-circle-fill" style="color: rgb(23, 232, 65);"></span>  Green </li>
+                    <li><span class="bi bi-circle-fill" style="color: rgb(255, 98, 0);"></span> orange</li>
+                    <li><span class="bi bi-circle-fill" style="color: rgb(255, 0, 251);"></span> purple</li>
+                    <li><span class="bi bi-circle-fill" style="color: rgb(255, 187, 0);"></span> yellow</li>
+                </ul>
+            </li>
+            <li><a href="#" data-bs-toggle="collapse" data-bs-target="#seasonCollapse"class="d-flex align-items-center justify-content-between">Season<span class="bi bi-caret-down-fill"></span></a>
+                <ul id="seasonCollapse" class="collapse">
+                    <li><input type="checkbox" value="Summer">  Summer</li>
+                    <li><input type="checkbox" value="Winter">  Winter</li>
+                    <li><input type="checkbox" value="Autumn">  Autumn</li>
+                </ul>
+            </li>
+            <li><a href="#" data-bs-toggle="collapse" data-bs-target="#sizeCollapse"class="d-flex align-items-center justify-content-between">Size<span class="bi bi-caret-down-fill"></span></a>
+                <ul class="size_list" id="sizeCollapse" class="collapse ">
+                    <div class="row">
+                    <div class="col-1 ms-4">
+                        <li>XS</li>
+                        <li>S</li>
+                        <li>M</li>
+                    </div>
+                    <div class="col-2 ms-4 ">
+                    <li>L</li>
+                    <li>XL</li>
+                    <li>XXL</li>
+                    </div>
+                    <div class="col-3 ms-4">
+                        <li>3XL</li>
+                    <li>4XL</li>
+                    <li>OneSize</li>
+                    </div>
+                </div>
+                    
+                    
+                    
+                </ul>
+            </li>
+            <li><a href="#" data-bs-toggle="collapse" data-bs-target="#brandCollapse"class="d-flex align-items-center justify-content-between">Brand<span class="bi bi-caret-down-fill "></span></a>
+                <ul id="brandCollapse" class="collapse">
+                    <li>ZARA</li>
+                    <li>H&M</li>
+                    <li>CHANEL</li>
+                    <li>VEROMODA</li>
+                    <li>ROADIES</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="ad_pictures">
+        <div class="picture_slider">
+          <div class="slides">
+          <input type="radio" name="radio-btn" id="radio-1">
+          <input type="radio" name="radio-btn" id="radio-2">
+          <input type="radio" name="radio-btn" id="radio-3">
+          <div class="slide first"><img src="public/assets/pure-julia-7QV71Nb3LVg-unsplash.jpg" alt="">
+              <div class="picture_text">
+              <p class="text_on">2023 Summer Collection</p>
+              <p>view collection <span class="bi bi-arrow-right"></span></p>
+              <p class="highlighter">NEW</p>
+            </div>
+          </div>
+          <div class="slide"><img src="public/assets/alireza-najaf-bNMY0KbkRF0-unsplash.jpg" alt="">
+              <div class="picture_text">
+                  <p class="text_on_2">Get 70% from Summer <br> Collection</p> 
+                  <p class="sub">Appear, dry there darkness seas</p>
+                  <p class="code">use code  UG5635HG</p>
+                  <button class="btn-1_2">shop now <span class="bi bi-arrow-right"></span> </button>
+                  
+                </div></div>
+          <div class="slide"><img src="public/assets/allyson-johnson-lY3d_sIzBXg-unsplash.jpg" alt="">
+          <div class="picture_text_3">
+              <p class="sub_1">ENJOY AN EXTRA</p>
+              <p class="sub_2"><b>50% OFF</b></p>
+              <p class="sub_3"> Shop Collection</p>
+          </div>
+          </div>
+          <div class="navigation">
+              <label for="radio-1" class="manual-btn"></label>
+              <label for="radio-2" class="manual-btn"></label>
+              <label for="radio-3" class="manual-btn"></label>
+          </div>
+       </div>
+      </section> 
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
