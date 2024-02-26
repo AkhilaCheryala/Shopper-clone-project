@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
 body{
-   font-family: 'Jost';
+ font-family: 'Jost';
 }
 .nav-bar-1{
     display: flex;
     background-color: rgb(245,245,245); 
     height: 7vh;
-    margin-top: -5px; 
     width: 100%;
     align-items: center; 
     justify-content: space-around;
@@ -27,7 +26,8 @@ body{
     font-weight:bold;
  }
  .icons_set-2{
-    display: flex;  
+    display: flex; 
+    align-items: center; 
  }
  .icons_set-2 span{
    margin-right: 10px;
@@ -49,7 +49,7 @@ body{
     font-size: 13px;
     font-weight:bold ;
     word-spacing: 2px;
-    background-color: #272626;
+    background-color: #432042;
     color: rgb(228, 227, 227);
     text-align: center;
     padding: 15px 0px;
@@ -63,44 +63,46 @@ body{
     font-size: 2rem;
 }
 .custom-width {
-    max-width: 250px; /* Or any other value */
+     max-width: 300px; 
     
 }
-.container-fluid ul{
+.container-fluid.filter ul{
     list-style: none;
     padding: 0;
 }
-nav.container-fluid ul li a {
-    padding: 1.2rem 0 ;
+nav.container-fluid.filter ul li a {
+    padding: 1.5rem 0 ;
      display: block; 
      text-decoration: none;
      color: #000000;
-     border-bottom: 1px solid rgb(199, 195, 195);
+     border-bottom: 1px solid rgb(230, 229, 229);
      font-size: 18px;
      font-weight: 600;
+     
 }
-.container-fluid li{
+.container-fluid.filter li{
     color: #272626;
     font-size: 18px;
-   padding: 5px ;
+   padding: 7px ;
+   
 }
 .bi-caret-down-fill{
     color: #353434;
     
 }
 .size_list li{
-   margin: 15px !important;
+   margin: 10px !important;
  
 } 
 
 .picture_slider{
     position: relative;
     flex-direction: row;
-    width: 800px;
+    width: 750px;
     height: 100%;
     overflow-x: hidden;
     margin-left: 25rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .slides{
     display: flex;
@@ -116,21 +118,21 @@ nav.container-fluid ul li a {
 }
 .slide img{
     width: 800px;
-    height: 500px;;
+    height: 420px;;
     object-fit: cover;
 }
 .navigation{
     position: absolute;
     width: 600px;
-    bottom: 40px;
-    left: 22rem;
+    bottom: 30px;
+    left: 21rem;
     display: flex;
     
 }
 .manual-btn {
     border: 1.5px solid rgb(30, 30, 30);
     background-color: beige;
-    padding: 8px;
+    padding: 6px;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
@@ -200,3 +202,143 @@ nav.container-fluid ul li a {
     font-size: 25px;
     text-decoration: underline;
 }
+.page_2-contents{
+    margin: 2rem 7rem 1rem  25rem; 
+}
+#womens_clothing{
+    text-align: center; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+   
+}
+.btn_option select {
+    font-size: 16px;
+    border: none;
+    background-color: #f1efef;
+    color: #000;
+}
+.card{
+    border: none !important;
+    overflow: hidden;
+    position: relative;
+}
+.card-img-top{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    transition:transform 0.6 ease;
+}
+.card:hover .card-img-top{
+ transform: scale(1.1);
+}
+.card:hover > .card-icons{
+    display: block;
+}
+.card-icons{
+    display: none;
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+}
+.bi-heart, .bi-cart,.bi-eye{  
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    padding: 7px 9px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.bi-heart:hover, .bi-cart:hover,.bi-eye:hover{
+    background-color: rgb(169, 9, 237);
+    color: white;
+    cursor: pointer;
+}
+.page_navigation ul{
+display: flex;
+align-items: center;
+font-size: 1.2rem;
+color: grey;
+font-weight: 500;
+justify-content: flex-end;
+margin-right: 1rem;  
+}
+.page_navigation li{
+    list-style: none;
+    margin: 10px;   
+}
+.page_navigation li a{
+    color: grey;
+    text-decoration: none;
+}
+
+.page_navigation li a:hover{
+  color: rgb(169, 9, 237) ;
+  cursor: pointer;  
+}
+footer{
+    background-color: #2d2d2d;
+    color: white;
+    padding: 40px;
+    margin-top: 2rem;
+    
+ }
+ .footerline{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ #email{
+   background-color: #454343; 
+   color: #000000;
+   border: none;
+   padding: 15px 25px;
+ }
+ .btn-2{
+    background-color: #454343;
+    color: #f8f8f8;
+    border: none;
+    padding: 15px 25px;
+ }
+ .footer-grid {
+  margin-top: 50px;
+ display: grid;
+ grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+  margin-bottom: 30px;
+                
+  }
+  .footer-title {
+  font-weight: 600;
+  font-size: 14px;
+    margin-bottom: 20px;
+   }
+  .footer-title~span {
+   display: block;
+    margin-bottom: 10px;
+     font-weight: 600;
+     font-size: 14px;
+     color: #cfcdcd;
+   }
+    .footer-brand {
+    font-size: 25px;
+     font-weight: bold;
+     margin-bottom: 20px;
+     }
+  .register{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 20px;
+ 
+  }
+  .copyrights{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-top: 15px;
+  }
+  .payment{
+    width: 200px;
+  }
+ 
