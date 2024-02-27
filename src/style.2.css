@@ -27,7 +27,12 @@ body{
  }
  .icons_set-2{
     display: flex; 
+    justify-content: space-between;
     align-items: center; 
+ }
+ .title{
+    font-size: 28px;
+    font-weight: bold;
  }
  .icons_set-2 span{
    margin-right: 10px;
@@ -49,8 +54,8 @@ body{
     font-size: 13px;
     font-weight:bold ;
     word-spacing: 2px;
-    background-color: #432042;
-    color: rgb(228, 227, 227);
+    background-color: #4e254c;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 15px 0px;
     width: 100%;
@@ -215,17 +220,18 @@ nav.container-fluid.filter ul li a {
 .btn_option select {
     font-size: 16px;
     border: none;
-    background-color: #f1efef;
+    background-color: #f0eded;
     color: #000;
 }
 .card{
     border: none !important;
     overflow: hidden;
     position: relative;
+    border-radius: 0;
 }
 .card-img-top{
-    width: 200px;
-    height: 300px;
+    width: 190px;
+    height: 270px;
     object-fit: cover;
     transition:transform 0.6 ease;
 }
@@ -341,24 +347,27 @@ footer{
   .payment{
     width: 200px;
   }
-  #IframeContainer{
-    width: 100%;
+  #IframeContainer {
+    width:56.5rem ;
     height: 100%;
     z-index: 1000;
     position: fixed;
-    top: 3rem;
-    left: 5rem;
-    background-color: white;
-  
+    top: 1rem;
+    left: 9rem; 
   }
-  iframe{
+  #IframeContainer iframe::-webkit-scrollbar {
+    display: none; /* hide the scrollbar for Chrome, Safari, and Opera */
+}
+iframe{
     width: 100%;
     height: 100%;
-  }
+}
   .bi-x-lg{
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: black;
   }
   .hidden{
     display: none;
@@ -366,5 +375,10 @@ footer{
   .overlay {
     display: none;
     position: fixed;
-    color: #272626;
+    background-color: rgba(0, 0, 0, 0.5); 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
   }

@@ -9,8 +9,15 @@
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
 
     body{
-        margin: 4rem;
+        
+        background-color: #ffffff;
+    }
+    .iframe-body{
+        width: 50rem;
+        height: 600px;
+        padding: 2.5rem;
         font-family: 'Jost';
+        background-color: white;
     }
 .product-details img {
     width: 100px;
@@ -20,7 +27,7 @@
     position: absolute;
     width: 400px;
     height: 500px;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 .options img{
     opacity: .7;
@@ -35,7 +42,7 @@ h1{
 }
 .product-details{
     margin-left: 30rem;
-    width: 300px;
+    width: 320px;
 }
 .size-chart{
     display: grid;
@@ -59,7 +66,7 @@ h1{
     border-radius: 0;
 }
 #add-to-cart,#add-to-wishlist{
-    padding: 1rem 2.5rem;
+    padding: 1rem 2.4rem;
     font-size: 1rem;
     border-radius: 0;
     border: 1.5px solid black;  
@@ -89,22 +96,32 @@ margin-bottom: 1rem;
     border: none;
     border-radius: 0;
     background-color: rgb(200, 97, 8);
-    padding: 0.7rem 6.64rem;
+     padding: 0.7rem 6.64rem;
+}
+.msg{
+    color: #432042;
+    font-size: 1.5 rem;
+    margin-top: 10px;
+}
+.wishlist{
+    display: flex;
+    gap: .8rem;
 }
 </style>
 </head>
 <body>
-    <div class="product-view">
-        <img src="assets/product-5.jpg" id="mainImg">
-        <button type="button" class="btn">More about the Product <span class="bi bi-exclamation-circle-fill"></span></button>
-    </div>
-    <div class="product-details">
+    <div class="iframe-body">
+      <div class="product-view">
+         <img src="assets/product-5.jpg" id="mainImg">
+         <button type="button" class="btn">More about the Product <span class="bi bi-exclamation-circle-fill"></span></button>
+      </div>
+     <div class="product-details">
         <h1>Casual Shoes</h1>
-       <h4>Color</h4>
-       <div class="options">
-       <img src="assets/pic (5).jpg" class="option" onclick="changeImage('pic (5).jpg')">
-       <img src="assets/product-5.jpg" class="option" onclick="changeImage('product-5.jpg')">
-    </div>
+        <h4>Color</h4>
+        <div class="options">
+           <img src="assets/pic (5).jpg" class="option" onclick="changeImage('pic (5).jpg')">
+           <img src="assets/product-5.jpg" class="option" onclick="changeImage('product-5.jpg')">
+        </div>
        <h4>Size</h4>
         <div class="size-chart">
             <p> 4.5</p>
@@ -121,8 +138,8 @@ margin-bottom: 1rem;
             <p> 7.5</p>
             <p> 10</p>
             <p> 10.5</p>
-        </div>
-        <div class="quantity-cart">
+         </div>
+         <div class="quantity-cart">
             <select>
                 <option value="one">1</option>
                 <option value="one">2</option>
@@ -132,8 +149,12 @@ margin-bottom: 1rem;
             </select>
           <button type="button" id="add-to-cart">Add to cart <span class="bi bi-cart4"></span></button>
         </div>
-        <button type="button" id="add-to-wishlist">Wishlist <span class="bi bi-heart"></span></button>
+        <div class="wishlist">
+        <button type="button" id="add-to-wishlist" onclick="displayMsg()">Wishlist <span class="bi bi-heart"></span></button>
+        <div class="msg"></div>
+        </div>
     </div>
+</div>
 </body>
 <script>
    document.addEventListener('DOMContentLoaded', function() {
@@ -147,7 +168,18 @@ margin-bottom: 1rem;
     });
   });
 });
+function displayMsg() {
+    var msgDiv = document.querySelector('.msg');
+    // Show the message
+    msgDiv.style.display = 'block';
+    // Set the message content
+    msgDiv.textContent = 'Item added to wishlist!';
 
+    // Hide the message after 3 seconds (3000 milliseconds)
+    setTimeout(function() {
+      msgDiv.style.display = 'none';
+    }, 3000);
+  }
 
 </script>
 </html>
