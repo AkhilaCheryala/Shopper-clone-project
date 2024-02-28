@@ -12,7 +12,7 @@
         
         background-color: #ffffff;
     }
-    .catalog-body{
+    .iframe-body{
         width: 50rem;
         height: 600px;
         padding: 2.5rem;
@@ -65,21 +65,21 @@ h1{
     border:1.5px solid black ;
     border-radius: 0;
 }
-#to-cart,#to-wishlist{
+#add-to-cart,#add-to-wishlist{
     padding: 1rem 2.4rem;
     font-size: 1rem;
     border-radius: 0;
     border: 1.5px solid black;  
 }
-#to-cart{
+#add-to-cart{
     color: white;
     background-color: #432042;
 }
-#to-wishlist{
+#add-to-wishlist{
     background-color:white;
     color: black;
 }
-#to-wishlist:hover{
+#add-to-wishlist:hover{
     color: white;
     background-color: #432042;
 }
@@ -88,7 +88,7 @@ h1{
  justify-content: space-between;
 margin-bottom: 1rem;
 }
-.btnx{
+.btn{
     position: absolute;
     bottom: -4rem;
     color: white;
@@ -98,7 +98,7 @@ margin-bottom: 1rem;
     background-color: rgb(200, 97, 8);
      padding: 0.7rem 6.64rem;
 }
-.msgx{
+.msg{
     color: #432042;
     font-size: 1.5 rem;
     margin-top: 10px;
@@ -110,7 +110,7 @@ margin-bottom: 1rem;
 </style>
 </head>
 <body>
-    <div class="catalog-body">
+    <div class="iframe-body">
       <div class="product-view">
          <img src="assets/product-5.jpg" id="mainImg">
          <button type="button" class="btn">More about the Product <span class="bi bi-exclamation-circle-fill"></span></button>
@@ -169,7 +169,7 @@ margin-bottom: 1rem;
   });
 });
 function displayMsg() {
-    var msgDiv = document.querySelector('.msgx');
+    var msgDiv = document.querySelector('.msg');
     // Show the message
     msgDiv.style.display = 'block';
     // Set the message content
