@@ -88,7 +88,7 @@ h1{
  justify-content: space-between;
 margin-bottom: 1rem;
 }
-.btnx{
+.btn{
     position: absolute;
     bottom: -4rem;
     color: white;
@@ -98,7 +98,7 @@ margin-bottom: 1rem;
     background-color: rgb(200, 97, 8);
      padding: 0.7rem 6.64rem;
 }
-.msgx{
+.msg{
     color: #432042;
     font-size: 1.5 rem;
     margin-top: 10px;
@@ -147,10 +147,10 @@ margin-bottom: 1rem;
                 <option value="one">4</option>
                 <option value="one">5</option>
             </select>
-          <button type="button" id="add-to-cart">Add to cart <span class="bi bi-cart4"></span></button>
+          <button type="button" id="to-cart">Add to cart <span class="bi bi-cart4"></span></button>
         </div>
         <div class="wishlist">
-        <button type="button" id="add-to-wishlist" onclick="displayMsg()">Wishlist <span class="bi bi-heart"></span></button>
+        <button type="button" id="to-wishlist" onclick="displayMsg()">Wishlist <span class="bi bi-heart"></span></button>
         <div class="msg"></div>
         </div>
     </div>
@@ -169,7 +169,7 @@ margin-bottom: 1rem;
   });
 });
 function displayMsg() {
-    var msgDiv = document.querySelector('.msgx');
+    var msgDiv = document.querySelector('.msg');
     // Show the message
     msgDiv.style.display = 'block';
     // Set the message content
@@ -180,6 +180,11 @@ function displayMsg() {
       msgDiv.style.display = 'none';
     }, 3000);
   }
+  var button = document.querySelector('.btn');
+
+  button.addEventListener("click",function(){
+ window.location.href ="page3.html";
+  });
 
 </script>
 </html>
