@@ -3,141 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product</title>
+    <title>page3</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
-
-    body{
-        
-        background-color: #ffffff;
-    }
-    .iframe-body{
-        width: 50rem;
-        height: 600px;
-        padding: 2.5rem;
-        font-family: 'Jost';
-        background-color: white;
-    }
-.product-details img {
-    width: 100px;
-    height: 100px;
-}
-#mainImg{
-    position: absolute;
-    width: 400px;
-    height: 500px;
-    margin-top: 4rem;
-}
-.options img{
-    opacity: .7;
-}
-.options img:hover{
- opacity: 1;
- 
-}
-h1{
-    margin:1rem 0;
-    font-weight: 500;
-}
-.product-details{
-    margin-left: 30rem;
-    width: 320px;
-}
-.size-chart{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
-}
-.size-chart p{
-    border: 1px solid rgb(192, 187, 187);
-    margin: .8rem 0;
-    width: 1rem;
-    padding: 10px 1.3rem ;
-    color:  rgb(142, 139, 139);   
-}
-.size-chart p:hover{
-    border: 1.2px solid black;
-    color: black;
-}
-.quantity-cart select{
-    padding: 1rem 2.2rem;
-    border:1.5px solid black ;
-    border-radius: 0;
-}
-#add-to-cart,#add-to-wishlist{
-    padding: 1rem 2.4rem;
-    font-size: 1rem;
-    border-radius: 0;
-    border: 1.5px solid black;  
-}
-#add-to-cart{
-    color: white;
-    background-color: #432042;
-}
-#add-to-wishlist{
-    background-color:white;
-    color: black;
-}
-#add-to-wishlist:hover{
-    color: white;
-    background-color: #432042;
-}
-.quantity-cart{
- display: flex;
- justify-content: space-between;
-margin-bottom: 1rem;
-}
-.btn{
-    position: absolute;
-    bottom: -4rem;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 0;
-    background-color: rgb(200, 97, 8);
-     padding: 0.7rem 6.64rem;
-}
-.msg{
-    color: #432042;
-    font-size: 1.5 rem;
-    margin-top: 10px;
-}
-.wishlist{
-    display: flex;
-    gap: .8rem;
-}
-</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/page3.css">
 </head>
 <body>
-    <div class="iframe-body">
+    <nav class="nav-bar-1">
+        <div class="first-set">
+           <span class="bi bi-truck"></span>&nbsp;
+           <span>FREE SHIPPING WORLDWIDE</span>
+        </div>
+        <div class="menu">
+            <span class="bi bi-list"></span>
+        </div>
+</nav> 
+<nav class="nav-bar-2">
+    <span class="title">Shopper.</span>
+    <div> 
+      <span class="nav_text"><a href="../index.html"> Home</a></span>
+       <span class="nav_text dropdown" id="catalog">Catalog
+           <div class="dropdown-content catalog-dropdown">
+               <div class="catalog-body">
+                <section class="catageries">
+                    <div class="category-types">
+                        <p>Women</p>
+                        <p>Men</p>
+                        <p>Kids</p>
+                    </div>
+                    <section class="container-fluid category-grid m-1">
+                        <div class="row">
+                            <div class="col-sm-1 me-5">
+                                <h6>All Clothing</h6>
+                                <p>Dresses</p>
+                                <p>Denims</p>
+                                <p>Shirts</p>
+                                <p>Ethnic</p>
+                                <p>Sarees</p>
+                                <p>T-shirts</p>          
+                                <p>Pants</p>            
+                                <p>Kurti</p>
+                            </div>
+                            <div class="col-sm-2 ms-4">
+                                <h6>All shoes</h6>
+                                <p>Casual</p>
+                                <p>Sneakers</p>
+                                <p>Sports</p>
+                                <p>Heels</p>
+                                <p>Sandals</p>
+                                <p>Flats</p>
+                                <p>Boots</p>
+                            </div>
+                            <div class="col-sm-3 ">
+                                <h6>All Cosmetics</h6>
+                                <p>Eye Makeup</p>
+                                <p>Lips</p>
+                                <p>Face</p>
+                                <p>Body</p>
+                                <p>Serums</p>
+                                <p>Primer</p>
+                                <p>Spray</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6>All Collections</h6>
+                                <p>Occasional Wear</p>
+                                <p>Party wear</p>
+                                <p>workout</p>
+                                <p>Sports</p>
+                                <p>All Denim </p>
+                                
+                            </div>
+                           <div class="col-sm-5 w-25">
+                            <img src="../public/assets/pic1 (1).jpg" alt="img" class="btn-img">
+                            <a href="page2.html"><button type="button" id="btnx">Shop now <span class="bi bi-arrow-right-short"></span></button></a>
+                          </div>
+                    </div>
+                    </section>
+                </section>
+            </div>
+           </div>
+       </span>
+      <span class="nav_text dropdown" id="shop">Shop
+ <div class="dropdown-content shop-dropdown">
+    <div class="shop-content">
+        <div class="row shop m-4">
+            <div class="col-1 w-50">
+                <h6>Shop</h6>
+                <p>All Categories</p>
+                <p>Denims</p>
+                <p>Beauty&Skin</p>
+                <p>Sports</p>
+                <p>Party</p>
+            </div>
+            <div class="col-2 w-50">
+                <h6>Support</h6>
+                <p>Shopping cart</p>
+                <p>Wishlist</p>
+                <p>Orders</p>
+                <p>Return Policy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <div class="row shop m-4">
+            <div class="col-1 w-50">
+                <h6>Account</h6>
+                <p>Profile</p>
+                <p>Gift Cards</p>
+                <p>Payment Mode</p>
+                <p>Super Coins</p>
+            </div>
+            <div class="col-2 w-50">
+                <h6> FAQs</h6>
+                <p>Shopping cart</p>
+                <p>Wishlist</p>
+                <p>Orders</p>
+                <p>Return Policy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </div>
+ </div>
+      </span>
+      <span class="nav_text dropdown">Pages
+        <div class="dropdown-content pages-dropdown">
+            <div class="pages-content m-3">
+                <p><a href="#">About</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Store Locator</a></p>
+                <p><a href="#">Coming Soon</a></p>
+                <P><a href="#">FAQs</a></P>
+            </div>
+        </div>
+      </span>
+      <span class="nav_text dropdown">Blog
+        <div class="dropdown-content blog-dropdown">
+          <div class="blog-content m-3">
+            <p>Blog</p>
+            <p>Social Media Posts</p>
+          </div>
+        </div>
+      </span>
+      <span class="nav_text">Docs</span> 
+  </div>  
+  <div class="icons_set-2">     
+    <span class="bi bi-search"></span>
+    <span class="bi bi-person"></span>
+    <span class="bi bi-heart"></span>
+     <div class="cart">
+       <span class="bi bi-cart"></span>
+       <p class="sup">2</p>
+    </div>
+  </div> 
+  </nav>
+    <div class="page-body">
       <div class="product-view">
          <img src="assets/product-5.jpg" id="mainImg">
-         <button type="button" class="btn">More about the Product <span class="bi bi-exclamation-circle-fill"></span></button>
       </div>
      <div class="product-details">
-        <h1>Casual Shoes</h1>
+        <h2>Casual Shoes</h2>
+        <span class="price">$ 110</span><span class="price_x">$ 99 </span> in stock
         <h4>Color</h4>
         <div class="options">
            <img src="assets/pic (5).jpg" class="option" onclick="changeImage('pic (5).jpg')">
            <img src="assets/product-5.jpg" class="option" onclick="changeImage('product-5.jpg')">
         </div>
-       <h4>Size</h4>
+       <h4>Size</h4><span class="sizeMsg"></span>
         <div class="size-chart">
-            <p> 4.5</p>
-            <p> 9</p>
-            <p> 11</p>
-            <p> 5</p>
-            <p> 5.5</p>
-            <p> 5</p>
-            <p> 8.5</p>
-            <p> 12.5</p>
-            <p> 6</p>
-            <p> 13</p>
-            <p> 7</p>
-            <p> 7.5</p>
-            <p> 10</p>
-            <p> 10.5</p>
+            <p onclick="touch(this)"> 4.5</p>
+            <p onclick="touch(this)"> 9</p>
+            <p onclick="touch(this)"> 11</p>
+            <p onclick="touch(this)"> 5</p>
+            <p onclick="touch(this)"> 5.5</p>
+            <p onclick="touch(this)"> 5</p>
+            <p onclick="touch(this)"> 8.5</p>
+            <p onclick="touch(this)"> 12.5</p>
+            <p onclick="touch(this)"> 6</p>
+            <p onclick="touch(this)"> 13</p>
+            <p onclick="touch(this)"> 7</p>
+            <p onclick="touch(this)"> 7.5</p>
+            <p onclick="touch(this)"> 10</p>
+            <p onclick="touch(this)"> 10.5</p>
          </div>
          <div class="quantity-cart">
             <select>
@@ -153,9 +198,25 @@ margin-bottom: 1rem;
         <button type="button" id="add-to-wishlist" onclick="displayMsg()">Wishlist <span class="bi bi-heart"></span></button>
         <div class="msg"></div>
         </div>
+        <div class="text mt-4">
+            <p> if your size sold out ? join the waitlist!</p>
+            <div class="share">
+                <h4>Share</h4>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-whatsapp"></span>
+            </div>
+        </div>
     </div>
+        <div class="options set-2">
+            <img src="assets/pic (101).jpg" class="option" onclick="changeImage('pic (5).jpg')">
+            <img src="assets/pic1 (5).jpg" class="option" onclick="changeImage('pic (5).jpg')">
+            <img src="assets/product-5.jpg" class="option" onclick="changeImage('product-5.jpg')">
+        </div>
 </div>
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
    document.addEventListener('DOMContentLoaded', function() {
   const mainImg = document.getElementById('mainImg');
@@ -179,6 +240,11 @@ function displayMsg() {
     setTimeout(function() {
       msgDiv.style.display = 'none';
     }, 3000);
+  }
+  function touch(element){
+    var size = element.textContent ;
+    var sizeMsg = document.querySelector('.sizeMsg');
+    sizeMsg.textContent ="selected size" + size ;
   }
 
 </script>
