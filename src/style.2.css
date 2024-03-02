@@ -243,6 +243,7 @@ nav.container-fluid.filter ul li a {
 .card-img-top{
     width: 190px;
     height: 270px;
+    border-radius: 0 !important;
     object-fit: cover;
     transition:transform 0.6 ease;
 }

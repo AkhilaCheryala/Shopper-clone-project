@@ -362,11 +362,11 @@ font-size: 16px;
    position: relative;
    border-radius: 0;
    height: 500px;
-   overflow: hidden;
 }
 .card-img-top{
    width: 200px;
    height: 400px;
+   border-radius: 0 !important;
    object-fit: cover;
    transition:transform 0.6 ease;
 }
