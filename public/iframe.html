@@ -122,22 +122,22 @@ margin-bottom: 1rem;
            <img src="assets/pic (5).jpg" class="option" onclick="changeImage('pic (5).jpg')">
            <img src="assets/product-5.jpg" class="option" onclick="changeImage('product-5.jpg')">
         </div>
-       <h4>Size</h4>
+       <h4>Size</h4><span class="sizeMsg"> selected size 4.5</span>
         <div class="size-chart">
-            <p> 4.5</p>
-            <p> 9</p>
-            <p> 11</p>
-            <p> 5</p>
-            <p> 5.5</p>
-            <p> 5</p>
-            <p> 8.5</p>
-            <p> 12.5</p>
-            <p> 6</p>
-            <p> 13</p>
-            <p> 7</p>
-            <p> 7.5</p>
-            <p> 10</p>
-            <p> 10.5</p>
+            <p onclick="touch(this)"> 4.5</p>
+            <p onclick="touch(this)"> 9</p>
+            <p onclick="touch(this)"> 11</p>
+            <p onclick="touch(this)"> 5</p>
+            <p onclick="touch(this)"> 5.5</p>
+            <p onclick="touch(this)"> 5</p>
+            <p onclick="touch(this)"> 8.5</p>
+            <p onclick="touch(this)"> 12.5</p>
+            <p onclick="touch(this)"> 6</p>
+            <p onclick="touch(this)"> 13</p>
+            <p onclick="touch(this)"> 7</p>
+            <p onclick="touch(this)"> 7.5</p>
+            <p onclick="touch(this)"> 10</p>
+            <p onclick="touch(this)"> 10.5</p>
          </div>
          <div class="quantity-cart">
             <select>
@@ -147,7 +147,7 @@ margin-bottom: 1rem;
                 <option value="one">4</option>
                 <option value="one">5</option>
             </select>
-          <button type="button" id="to-cart">Add to cart <span class="bi bi-cart4"></span></button>
+          <button type="button" id="to-cart">Add to cart <span class="bi bi-cart"></span></button>
         </div>
         <div class="wishlist">
         <button type="button" id="to-wishlist" onclick="displayMsg()">Wishlist <span class="bi bi-heart"></span></button>
@@ -180,11 +180,11 @@ function displayMsg() {
       msgDiv.style.display = 'none';
     }, 3000);
   }
-//   var button = document.querySelector('.btn');
-
-//   button.addEventListener("click",function(){
-//  window.location.href ="page3.html";
-//   });
+  function touch(element){
+    var size = element.textContent ;
+    var sizeMsg = document.querySelector('.sizeMsg');
+    sizeMsg.textContent ="selected size" + size ;
+  }
 
 </script>
 </html>

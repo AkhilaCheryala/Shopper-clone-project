@@ -9,7 +9,7 @@
  <link rel="stylesheet" href="src/index.css">
  <script src="src/index.js"></script>
  </head>
-<body>
+<body onload="startTimer()">
 <nav class="nav-bar-1">
           <div class="first-set">
              <span class="bi bi-truck"></span>&nbsp;
@@ -166,11 +166,11 @@
       <span class="nav_text">Docs</span> 
   </div>   
   <div class="icons_set-2">     
-    <span class="bi bi-search"></span>
-    <span class="bi bi-person"></span>
-    <span class="bi bi-heart"></span>
+    <span class="bi bi-search-heart"></span>
+    <span class="bi bi-person-fill"></span>
+    <span class="bi bi-heart-fill"></span>
     <div class="cart">
-       <span class="bi bi-cart"></span>
+       <span class="bi bi-cart-check-fill"></span>
        <p class="sup">2</p>
     </div>
   </div> 
@@ -247,7 +247,7 @@
          <img src="public/assets/pic1 (5).jpg" alt="" class="grid-set">
          <div class="pic-content">
             <div class="big-left">Bags collection</div>
-            <div class="small-left"> Shop now<span class="bi bi-arrow-right-short"></span></div>
+            <a href="public/page2.html"> <div class="small-left"> Shop now<span class="bi bi-arrow-right-short"></span></div></a>
          </div>
 </div>
    <div>
@@ -255,7 +255,7 @@
          <div class="offer">Save <br>30%</div>
          <div class="pic-content">
             <div class="big-right">Printed men's shirts</div>
-            <div class="small-right"> Shop now<span class="bi bi-arrow-right-short"></span></div>
+            <a href="public/page2.html"><div class="small-right"> Shop now<span class="bi bi-arrow-right-short"></span></div></a>
          </div> 
    </div>
 </section>
@@ -264,14 +264,14 @@
        <img src="public/assets/pic1(9).jpg" alt=""class="grid-set">
          <div class="pic-content">
             <div class="big-right">Basic common Dresses</div>
-           <div class="small-right"> Shop now<span class="bi bi-arrow-right-short"></span></div>
+           <a href="public/page2.html"><div class="small-right"> Shop now<span class="bi bi-arrow-right-short"></span></div></a>
          </div>
    </div>
    <div>
        <img src="public/assets/pic1 (7).jpg" alt=""class="grid-set">
        <div class="pic-content">
          <div class="big-left">Sweatshirts</div>
-           <div class="small-left"> Shop now<span class="bi bi-arrow-right-short"></span></div>
+         <a href="public/page2.html">  <div class="small-left"> Shop now<span class="bi bi-arrow-right-short"></span></div></a>
         </div>
  </div> 
 </section>
@@ -421,14 +421,8 @@
    <div class="cover-text">
      <div class="summer">Get -50% from <br>
       Summer Collection</div>
-      <div class="time">810 : 05 : 38 : 49</div>
-      <div>
-         <span class="set"> Days</span>
-         <span class="set">Hours</span>
-         <span class="set">Minutes</span>
-         <span class="set"> Seconds</span>
-      </div>
-   <div class="button">Shop Now
+      <div id="timerDisplay">200 days : 60 hours : 30 minutes : 12 seconds</div>
+   <div class="button" id="clearInterval" onclick=" closeIframe()">Shop Now
       <span class="bi bi-arrow-right-short"></span>
    </div>
 </div>
