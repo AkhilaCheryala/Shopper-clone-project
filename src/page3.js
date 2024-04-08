@@ -11,12 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   function displayMsg() {
       var msgDiv = document.querySelector('.msg');
-      // Show the message
       msgDiv.style.display = 'block';
-      // Set the message content
       msgDiv.textContent = 'Item added to wishlist!';
-  
-      // Hide the message after 3 seconds (3000 milliseconds)
       setTimeout(function() {
         msgDiv.style.display = 'none';
       }, 3000);
@@ -27,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       sizeMsg.textContent ="selected size" + size ;
     }
     
-    // Setup event listener for navigation links
+    
     document.addEventListener('DOMContentLoaded', function() {
       const links = document.querySelectorAll('.nav_description a');
       links.forEach(link => {
