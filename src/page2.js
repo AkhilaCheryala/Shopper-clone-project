@@ -11,15 +11,4 @@ function closeIframe(){
 }
 document.ElementById("open").addEventListener("click", openIframe);
 
-// document.addEventListener("DOMContentLoaded" ,function(){
-//     var catalogItem =document.getElementById('catalog');
-//     var iframeContainer = document.querySelector(".iframe2container");
-//     var iframe = document.querySelector(".hidden-iframe2");
-//     catalogItem.addEventListener("mouseover", function() {
-//         iframe.style.display = "block";
-//     });
 
-//     catalogItem.addEventListener("mouseout", function() {
-//         iframe.style.display = "none";
-//     });
-// });
